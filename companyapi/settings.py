@@ -25,8 +25,12 @@ SECRET_KEY = 'django-insecure-gsob&v^(i+3h17q0zza7%tv%dmxdoe-0jpwu7n$zi)wgd(@l!$
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+# DEBUG = True
+
 
 ALLOWED_HOSTS = ['localhost','graviton123.pythonanywhere.com']
+# ALLOWED_HOSTS = []
+
 
 
 # Application definition
@@ -40,9 +44,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'myApi',
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -72,6 +79,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'companyapi.wsgi.application'
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8080",
+    'http://localhost:3000',
+]
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
