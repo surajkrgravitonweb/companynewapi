@@ -28,7 +28,7 @@ DEBUG = False
 # DEBUG = True
 
 
-ALLOWED_HOSTS = ['localhost','graviton123.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost','gravitonweb.pythonanywhere.com']
 # ALLOWED_HOSTS = []
 
 
