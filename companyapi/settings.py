@@ -24,12 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-gsob&v^(i+3h17q0zza7%tv%dmxdoe-0jpwu7n$zi)wgd(@l!$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
-DEBUG = True
+DEBUG = False
+# DEBUG = True
 
 
-# ALLOWED_HOSTS = ['localhost','graviton123.pythonanywhere.com']
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost','graviton123.pythonanywhere.com']
+# ALLOWED_HOSTS = []
 
 
 
@@ -136,3 +136,13 @@ STATIC_ROOT=os.path.join(BASE_DIR,'static')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+CORS_ALLOW_METHODS = (
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+)
