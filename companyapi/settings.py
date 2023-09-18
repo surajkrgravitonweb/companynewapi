@@ -24,12 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-gsob&v^(i+3h17q0zza7%tv%dmxdoe-0jpwu7n$zi)wgd(@l!$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-# DEBUG = True
+# DEBUG = False
+DEBUG = True
 
 
-ALLOWED_HOSTS = ['localhost','graviton123.pythonanywhere.com']
-# ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['localhost','graviton123.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 
